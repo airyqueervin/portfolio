@@ -1,9 +1,9 @@
-const path = require('path');
 const express = require('express');
+const path = require('path');
+const projectRouter = require('./routers/project');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-
 app.use(express.static(path.join(__dirname, '../dist')));
+app.use('/project', projectRouter);
 
-app.listen(PORT, () => console.log(`Game Info server is listening on port: ${PORT}`));
+module.exports = app;
