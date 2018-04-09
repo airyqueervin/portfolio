@@ -1,0 +1,20 @@
+[
+  {
+    "Title": "BestFitSearch",
+    "Desc": "BestFit will ensure you’re the best fit for the job and makes it easy to manage the job search.",
+    "Tasks": ["Optimized asynchronous calls to multiple API servers to render appropriate data within React app.", "Built out job search and job info with data from Indeed and Glassdoor APIs.","Designed color and layout of dashboard home page","Developed authentication for registered and guest users"],
+    "URL": "http://www.bestfitsearch.info/home"
+  },
+  {
+    "Title": "Via·Tor",
+    "Desc": "Allows you to plan a trip anywhere, anytime.",
+    "Tasks": ["Built an options menu to filter cards based on preference.", "Utilized React and Material-UI to pass state through checkboxes to toggle cards.", "Maintained React state by passing down location data to multiple card views."],
+    "URL": "http://viator-app.herokuapp.com/"
+  },
+  {
+    "Title": "Codr",
+    "Desc": "Codr teaches kids to code javascript basics.",
+    "Tasks": ["Utilized AWS to store high res images and MongoDB/Mlabs to store shortened links.", "Enhanced Codr’s visual appeal and integrated componentes with server-side logic.", "Integrated AWS, React, and Mongoose to render images when a level is loaded from cookies."],
+    "URL": "https://codr.herokuapp.com/"
+  }
+]
