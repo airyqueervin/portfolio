@@ -1,31 +1,21 @@
-/* eslint react/no-multi-comp: 0, react/prop-types: 0 */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-class ModalExample extends React.Component {
+class ModalCarousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       modal: false,
     };
-
-    this.toggle = this.toggle.bind(this);
-  }
-
-  toggle() {
-    this.setState({
-      modal: !this.state.modal,
-    });
   }
 
   render() {
+    const { modal, toggle } = this.props
     return (
       <div>
-        <Button color="danger" onClick={this.toggle}>Open Modal</Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+        <Modal isOpen={modal} toggle={toggle} className={this.props.className}>
+          <ModalHeader toggle={toggle}>Modal title</ModalHeader>
           <ModalBody>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -37,8 +27,8 @@ class ModalExample extends React.Component {
             sunt in culpa qui officia deserunt mollit anim id est laborum.
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
+            <Button color="secondary" onClick={toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
       </div>
@@ -46,7 +36,7 @@ class ModalExample extends React.Component {
   }
 }
 
-export default ModalExample;
+export default ModalCarousel;
 
 Modal.propTypes = {
   // boolean to control the state of the popover
