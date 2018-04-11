@@ -24,7 +24,7 @@
     "Title": "Via·Tor",
     "Desc": "Allows you to plan a trip anywhere, anytime.",
     "Tasks": ["Built an options menu to filter cards based on preference.", "Utilized React and Material-UI to pass state through checkboxes to toggle cards.", "Maintained React state by passing down location data to multiple card views."],
-    "URL": "http://viator-app.herokuapp.com/",
+    "URL": "https://viator-app.herokuapp.com/",
     "Img": ["https://s3-us-west-2.amazonaws.com/ae-portfolio-screenshots/via_01.png", "https://s3-us-west-2.amazonaws.com/ae-portfolio-screenshots/via_02.png"]
   },
   {
