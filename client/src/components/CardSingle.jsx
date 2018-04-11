@@ -27,6 +27,7 @@ class SingleCard extends Component {
       <Card>
         <CardImg onClick={this.toggle} top width="100%" src={card.Img[0]} alt="Card image cap" />
         <Modal modal={this.state.modal} toggle={this.toggle} img={card.Img} title={card.Title} url={card.URL} />
+        <hr className="my-2" />
         <CardBody>
           <CardTitle>{ card.Title }</CardTitle>
           <CardSubtitle>{ card.Desc }</CardSubtitle>
