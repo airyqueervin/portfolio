@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CardDeck } from 'reactstrap';
+import { CardColumns } from 'reactstrap';
 import CardSingle from './CardSingle';
 
 const CardsList = ({ data }) => (
-  <CardDeck>
+  <CardColumns>
     {data.map(card => <CardSingle key={Math.random(0, 100)} card={card} />)}
-  </CardDeck>
+  </CardColumns>
 );
 
 export default CardsList;

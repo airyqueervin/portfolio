@@ -1,21 +1,29 @@
 import React from 'react';
-import { Container, Jumbotron, Button } from 'reactstrap';
+import { Container, Jumbotron, Button, CardImg, Row, Col } from 'reactstrap';
 import PropTypes from 'prop-types';
-import NavBar from './NavBar';
+// import NavBar from './NavBar';
 import CardsList from './CardsList';
 
 const App = ({ data }) => (
-  <div>
+  <div id="top-space">
     <Container fluid>
-      <NavBar />
+      {/* <NavBar /> */}
       <Jumbotron>
-        <h1 className="display-3">Hello, world!</h1>
-        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+        {/* <Row>
+          <Col xs="6">
+            <h1 className="display-3">Hello, I am Airyque!</h1> 
+          </Col>
+          <Col xs="6">
+            <CardImg style={ { width:'50%', borderRadius:'50%' } } src="https://s3-us-west-2.amazonaws.com/ae-portfolio-screenshots/ProfPic.png" className="img-responsive" alt="Prof Pic" />
+          </Col>
+        </Row> */}
+        <h1 className="display-3">Hello, I am Airyque!</h1>
+        <p className="lead">This is the hub of most of my projects.</p>
         <hr className="my-2" />
-        <p>This is some text</p>
-        <p className="lead">
+        <p>I am really excited for an opportunity that enables me to utilize my technical strengths as a software engineer and my creative strengths, gained from working as a cinematic artist, to further innovate the industry and contribute to a mission that i believe in. I'd like to continue working with cutting edge technologies, like React. I live to see my work come to life when I complete projects.</p>
+        {/* <p className="lead">
           <Button color="primary">Learn More</Button>
-        </p>
+        </p> */}
       </Jumbotron>
       <CardsList data={data} />
     </Container>
