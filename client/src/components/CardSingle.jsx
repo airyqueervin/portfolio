@@ -25,8 +25,8 @@ class SingleCard extends Component {
     const { card } = this.props;
     return (
       <Card>
-        <CardImg onClick={this.toggle} top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-        <Modal modal={this.state.modal} toggle={this.toggle} />
+        <CardImg onClick={this.toggle} top width="100%" src={card.Img[0]} alt="Card image cap" />
+        <Modal modal={this.state.modal} toggle={this.toggle} img={card.Img} title={card.Title} url={card.URL} />
         <CardBody>
           <CardTitle>{ card.Title }</CardTitle>
           <CardSubtitle>{ card.Desc }</CardSubtitle>
