@@ -7,7 +7,7 @@ const ModalCarousel = ({
   modal, toggle, img, title, url,
 }) => (
   <div>
-    <Modal isOpen={modal} toggle={toggle} style={{ maxWidth: '75%' }}>
+    <Modal isOpen={modal} toggle={toggle} >
       <ModalHeader toggle={toggle}>{title}</ModalHeader>
       <ModalBody>
         <Carousel items={img} />
